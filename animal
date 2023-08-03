@@ -1,0 +1,28 @@
+public class Text {
+        public static void main(String[] args) {
+        //animal
+
+        Animals animal=new Dogs("saw",10);
+
+        animal.eat();//eat
+
+        System.out.println("====");
+
+        //animal
+
+        animal=new Cats("a",15);
+
+        animal1.eat();
+        if(animal instanceof Dogs){
+                dog=(Dog)animal;
+
+        }
+
+        if(animal instanceof Dogs){
+                cat=(Cat)animal;
+
+        }
+
+    }
+
+}
