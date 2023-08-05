@@ -1,0 +1,3 @@
+ List<Integer> collectedList = numbers.stream()
+                .collect(Collectors.toList());
+        System.out.println("Collected List: " + collectedList);
