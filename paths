@@ -1,0 +1,6 @@
+impl Solution {
+    pub fn unique_paths(m: i32, n: i32) -> i32 {
+        let (m, n) = (m.min(n) as u64, m.max(n) as u64);
+        (1..m).fold(1, |ans, y| ans * (y + n - 1) / y) as i32
+    }
+}
