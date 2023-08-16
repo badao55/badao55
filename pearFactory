@@ -1,0 +1,11 @@
+public class FruitApp {  
+  
+    public static void main(String[] args){  
+        AppleFactory appleFactory = new AppleFactory();  
+        PearFactory pearFactory = new PearFactory();  
+        Apple apple = appleFactory.createFruit();
+        Pear pear = pearFactory.createFruit();  
+        apple.whatIm();  
+        pear.whatIm();  
+    }  
+}  
