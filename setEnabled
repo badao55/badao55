@@ -1,0 +1,18 @@
+void Finddialog::enable_search_button(const QString& text)
+{
+    if (!text.isEmpty())
+    {
+        search_button->setEnabled(true);
+        search_button->setStyleSheet("QPushButton {background-color:white}");
+    }
+    else
+    {
+        search_button->setEnabled(false);
+        search_button->setStyleSheet("QPushButton {background-color:rgba(210, 210, 210)}");
+    }
+}
+
+    connect(search_line,
+            SIGNAL(textChanged(const QString &)),
+            this,
+            SLOT(enable_search_button(const QString &)));
